@@ -1,0 +1,1 @@
+const a=Number(process.argv[2]); const d=Number(process.argv[3]); const n=Number(process.argv[4]); if([a,d,n].some(isNaN)){console.log('Uso: node 079_generar_serie_aritmetica.js a d n');process.exit(1);} let out=[]; for(let i=0;i<n;i++) out.push(a+i*d); console.log(out.join(' '));

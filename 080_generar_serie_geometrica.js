@@ -1,0 +1,1 @@
+const a=Number(process.argv[2]); const r=Number(process.argv[3]); const n=Number(process.argv[4]); if([a,r,n].some(isNaN)){console.log('Uso: node 080_generar_serie_geometrica.js a r n');process.exit(1);} let out=[]; for(let i=0;i<n;i++) out.push(a*Math.pow(r,i)); console.log(out.join(' '));

@@ -1,0 +1,1 @@
+const sep=process.argv.indexOf('--'); if(sep===-1){console.log('Uso: node 091_producto_punto.js <v1...> -- <v2...>');process.exit(1);} const a=process.argv.slice(2,sep).map(Number), b=process.argv.slice(sep+1).map(Number); const n=Math.min(a.length,b.length); let s=0; for(let i=0;i<n;i++) s+=a[i]*b[i]; console.log(s);

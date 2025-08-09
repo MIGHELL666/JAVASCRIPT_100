@@ -1,0 +1,1 @@
+const n=Number(process.argv[2]); if(isNaN(n)){console.log('Uso: node 049_lista_primos_hasta_n.js n');process.exit(1);} const sieve=Array(n+1).fill(true); sieve[0]=sieve[1]=false; for(let i=2;i*i<=n;i++) if(sieve[i]) for(let j=i*i;j<=n;j+=i) sieve[j]=false; console.log(sieve.map((v,i)=>v?i:null).filter(Boolean).join(' '));

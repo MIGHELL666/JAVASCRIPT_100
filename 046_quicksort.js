@@ -1,0 +1,1 @@
+const a=process.argv.slice(2).map(Number); function q(s){ if(s.length<2)return s; const p=s[0]; const l=s.slice(1).filter(x=>x<=p), r=s.slice(1).filter(x=>x>p); return [...q(l),p,...q(r)]; } console.log(q(a).join(' '));

@@ -1,0 +1,1 @@
+const fs=require('fs'); const [file,...rest]=process.argv.slice(2); if(!file){console.log('Uso: node 096_crear_archivo_contenido.js <archivo> <texto...>');process.exit(1);} fs.writeFileSync(file, rest.join(' ')); console.log('OK');

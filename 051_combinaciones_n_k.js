@@ -1,0 +1,1 @@
+const [n,k]=process.argv.slice(2).map(Number); if([n,k].some(isNaN)){console.log('Uso: node 051_combinaciones_n_k.js n k');process.exit(1);} function C(n,k){ if(k<0||k>n)return 0; let r=1; for(let i=1;i<=k;i++){ r=r*(n-k+i)/i;} return Math.round(r);} console.log(C(n,k));

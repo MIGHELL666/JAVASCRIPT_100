@@ -1,0 +1,1 @@
+const fs=require('fs'); const [file,...rest]=process.argv.slice(2); if(!file){console.log('Uso: node 097_anadir_linea_archivo.js <archivo> <texto...>');process.exit(1);} fs.appendFileSync(file, rest.join(' ')+'\n'); console.log('OK');

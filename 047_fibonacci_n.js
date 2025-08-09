@@ -1,0 +1,1 @@
+const n=Number(process.argv[2]); if(isNaN(n)){console.log('Uso: node 047_fibonacci_n.js n');process.exit(1);} let a=0,b=1; const out=[]; for(let i=0;i<n;i++){out.push(a);[a,b]=[b,a+b];} console.log(out.join(' '));

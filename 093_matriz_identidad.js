@@ -1,0 +1,1 @@
+const n=Number(process.argv[2]); if(isNaN(n)){console.log('Uso: node 093_matriz_identidad.js n');process.exit(1);} for(let i=0;i<n;i++){ let row=''; for(let j=0;j<n;j++) row += (i===j? '1 ':'0 '); console.log(row.trim()); }
